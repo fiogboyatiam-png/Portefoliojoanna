@@ -909,5 +909,10 @@ a.contact-card:hover, button.contact-card:hover {
     .section { padding: 3.5rem 0; }
     .hero-buttons .button { width: 100%; }
     .gallery { grid-template-columns: 1fr 1fr; }
-    .footer-grid { flex-direction: column; text-align: center; }
+
+    .footer { padding: 2.2rem 0 1rem; }
+    .footer-grid { flex-direction: column; text-align: center; gap: 1.1rem; }
+    .footer-brand { flex-direction: column; gap: 0.6rem; }
+    .footer-script { font-size: 1.1rem; }
+    .footer-copy { margin-top: 1.2rem; }
 }
