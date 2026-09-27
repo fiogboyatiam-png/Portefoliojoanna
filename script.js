@@ -1,7 +1,3 @@
-/* ============================================================
-   Portfolio - Joanna Abidé Ani
-   Thème clair/sombre · Traduction FR/EN · CV FR/EN · Modales
-   ============================================================ */
 "use strict";
 
 /* ============================================================
@@ -23,7 +19,7 @@ const translations = {
         "hero.script": "Rêver &nbsp;·&nbsp; Planifier &nbsp;·&nbsp; Entreprendre",
         "hero.cta1": 'Découvrir mon parcours <span class="arrow">→</span>',
         "hero.cta2": "Me contacter",
-        "hero.cv": "📄 Télécharger mon CV",
+        
         "hero.quote": "« Des idées aujourd'hui,<br>des projets demain. »",
 
         "about.title": 'À propos <span class="underline-gold">de moi</span>',
@@ -86,12 +82,7 @@ const translations = {
         "lang2.h": "Anglais",
         "lang2.p": "Niveau B2 (Test British Council)",
 
-        "hobbies.title": 'Centres <span class="underline-gold">d\'intérêt</span>',
-        "hobby1": "Entrepreneuriat ",
-        "hobby2": "Badminton",
-        "hobby3": "Roller",
-        "hobby4": "Peinture",
-        "hobby5": "Cuisine &amp; pâtisserie",
+    
 
         "contact.title": 'Con<span class="underline-gold">tact</span>',
         "contact.intro": "N'hésitez pas à me contacter pour toute collaboration, question ou opportunité.",
@@ -132,7 +123,7 @@ const translations = {
         "hero.script": "Dream &nbsp;·&nbsp; Plan &nbsp;·&nbsp; Build",
         "hero.cta1": 'Discover my journey <span class="arrow">→</span>',
         "hero.cta2": "Get in touch",
-        "hero.cv": "📄 Download my resume",
+       
         "hero.quote": "« Ideas today,<br>projects tomorrow. »",
 
         "about.title": 'About <span class="underline-gold">me</span>',
@@ -195,13 +186,7 @@ const translations = {
         "lang2.h": "English",
         "lang2.p": "B2 level (British Council test)",
 
-        "hobbies.title": 'Inter<span class="underline-gold">ests</span>',
-        "hobby1": "Entrepreneurship ",
-        "hobby2": "Badminton",
-        "hobby3": "Roller skating",
-        "hobby4": "Painting",
-        "hobby5": "Cooking &amp; baking",
-
+    
         "contact.title": 'Con<span class="underline-gold">tact</span>',
         "contact.intro": "Feel free to contact me for any collaboration, question or opportunity.",
         "contact.phone": "Phone",
@@ -227,16 +212,10 @@ const translations = {
     },
 };
 
-/* Fichiers CV selon la langue */
-const cvFiles = {
-    fr: "assets/CV_Joanna_FR.pdf",
-    en: "assets/CV_Joanna_EN.pdf",
-};
 
 /* ---------- Langue ---------- */
 const langBtn = document.getElementById("langBtn");
 const langIcon = document.getElementById("langIcon");
-const cvBtn = document.getElementById("cvBtn");
 let currentLang = localStorage.getItem("joanna-lang") || "fr";
 
 function applyLang(lang) {
@@ -251,15 +230,7 @@ function applyLang(lang) {
         if (value !== undefined) el.innerHTML = value;
     });
 
-    // Le bouton CV télécharge la version de la bonne langue
-    if (cvBtn) {
-        cvBtn.href = cvFiles[lang];
-        cvBtn.setAttribute("download", cvFiles[lang].split("/").pop());
-    }
-
-    // Le bouton affiche la langue vers laquelle on peut basculer
-    langIcon.textContent = lang === "fr" ? "EN" : "FR";
-    langBtn.setAttribute("aria-label", lang === "fr" ? "Switch to English" : "Passer en français");
+    
 }
 
 langBtn.addEventListener("click", () => {
