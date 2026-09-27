@@ -87,7 +87,7 @@ const translations = {
         "lang2.p": "Niveau B2 (Test British Council)",
 
         "hobbies.title": 'Centres <span class="underline-gold">d\'intérêt</span>',
-        "hobby1": "Entrepreneuriat &amp; boutique en ligne",
+        "hobby1": "Entrepreneuriat ",
         "hobby2": "Badminton",
         "hobby3": "Roller",
         "hobby4": "Peinture",
@@ -196,7 +196,7 @@ const translations = {
         "lang2.p": "B2 level (British Council test)",
 
         "hobbies.title": 'Inter<span class="underline-gold">ests</span>',
-        "hobby1": "Entrepreneurship &amp; online shop",
+        "hobby1": "Entrepreneurship ",
         "hobby2": "Badminton",
         "hobby3": "Roller skating",
         "hobby4": "Painting",
